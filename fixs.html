@@ -12,17 +12,17 @@
         <h2>Lakbay Batangas Tours</h2>
         <p>Discover Batangas through sample tour experiences.</p>
         <nav aria-label="Primary navigation">
-          <li><a href="#start">Home</a></li>
-          <li><a href="#who-we-are">About</a></li>
-          <li><a href="#package">Tour Packages</a></li>
-          <li><a href="#benefits">Why Choose Us</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#why choose us">Why Choose Us</a></li>
           <li><a href="#contact-us">Contact</a></li>
         </nav>
     </header>
  </header>
 
-    <main id="main-content">
-        <section id="start">
+    <main id="home">
+        <section id="home">
             <h2>Welcome to Lakbay Batangas Tours</h2>
             <p>Review our sample tour packages, compare the experience, and send an inquiry.</p>
             <p><a href="#package">View the three tour packages</a></p>
@@ -48,7 +48,7 @@
             <p>Our company has operated for 30 years and won every regional tourism award.</p>
         </section>
     <li><a href="#contact-us">Contact</a></li>
-        <section id="package">
+        <section id="packages">
             <h2>Tour Packages</h2>
             <p>These are sample package descriptions for classroom practice; details require approval.</p>
 
@@ -95,15 +95,26 @@
 </table>
 
 <!-- WHY CHOOSE US -->
-<h2>Why Choose Us</h2>
+  <section id="why choose us">
+<h2>why choose us</h2>
 <ul>
   <li>Local knowledge</li>
   <li>Clear tour information</li>
   <li>Simple inquiry process</li>
 </ul>
+<section id="why">
+    <h2>benefits</h2>
+    <ol>
+        <li>Local guides who know Batangas best</li>
+        <li>Affordable and transparent pricing</li>
+        <li>Safe and comfortable travel</li>
+        <li>Personalized tours just for you</li>
+    </ol>
+</section>
 
+</section>
 <!-- CONTACT US -- ITO ANG PUPUNTAHAN -->
-<h2 id="contact">Contact Us</h2>
+<h2 id="contact-us">Contact Us</h2>
 <p>Contact us if you would like to ask about one of our tours.</p>
 <p>Interested in a tour? Please contact us using the following below.</p>
 
@@ -112,12 +123,36 @@
 
 <h3>Inquiry Form Control</h3>
 <form>
-  <label>Your name:</label>
+  <label>Your name{required}</name>:</label>
   <input type="text" name="your-name">
   <br><br>
 
 </form>
-      
+      <form>
+  <label>email address {required}:</label>
+  <input type="text" name="your-name">
+  <br><br>
+
+</form>
+
+<label for="tour-choice" required>Tour Choice:</label>
+<select id="tour-choice" name="tour-choice" required>
+    <option value="">Select a tour</option>
+    <option value="taal-heritage">Taal Heritage Tour</option>
+    <option value="laiya-beach">Laiya Beach Tour</option>
+    <option value="batangas-nature">Batangas Nature Tour</option>
+</select>
+<br>
+<br>
+<label for="optional-message">Message:</label>
+<textarea id="optional-message" name="optional-message" rows="4" cols="50"></textarea>
+    <br>
+
+ 
+
+
+
+  </seclect>
     </section>
     </body>
 </html>
